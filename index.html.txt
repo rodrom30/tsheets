@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time & Material Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Time & Material Entry</h2>
+        <form id="timeSheetForm">
+            <label>Name:</label>
+            <input type="text" id="name" required>
+
+            <label>Date:</label>
+            <input type="date" id="date" required>
+
+            <label>Start Time:</label>
+            <input type="time" id="startTime" required>
+
+            <label>End Time:</label>
+            <input type="time" id="endTime" required>
+
+            <label>Material Used:</label>
+            <textarea id="materials"></textarea>
+
+            <label>Signature:</label>
+            <canvas id="signature-pad" width="300" height="100"></canvas>
+            <button type="button" id="clear-signature">Clear</button>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
